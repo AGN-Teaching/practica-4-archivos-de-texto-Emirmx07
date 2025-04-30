@@ -18,12 +18,12 @@ def limpiar_palabra(palabra):
         palabra = palabra[1:]
     while len(palabra) > 0 and palabra[-1] in signos:
         palabra = palabra[:-1]
-    return palabra.lower()
+    return palabra.lower() 
 
 def verificar_ortografia(archivo_usuario, diccionario):
     """Busca palabras incorrectas en un archivo."""
     palabras_incorrectas = []
-    try:
+    try: 
         with open(archivo_usuario, 'r', encoding='utf-8') as archivo:
             for linea in archivo:
                 for palabra in linea.split():
